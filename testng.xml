@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BE_POC_REGRESSION_SUITE" parallel="tests" thread-count="3" >
+<parameter name="browser" value="grid"></parameter>
+
+    <test name="CreateAcc">
+        <classes>
+
+            <class name="login.EmailLogin"/>
+        </classes>
+    </test>
+
+
+
+    <test name="GoogleExtra" >
+        <classes>
+            <class name="login.TestReachingGoogleExtra" />
+        </classes>
+    </test>
+
+
+    <test name="ReachGoogle" >
+        <classes>
+            <class name="login.TestReachingGoogle" />
+        </classes>
+    </test>
+
+</suite>

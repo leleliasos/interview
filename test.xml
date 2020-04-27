@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="RegressionSuite" >
+    <parameter name="browser" value="chrome"/>
+
+
+
+    <test name="TestReachGoogle" >
+        <classes>
+            <class name="login.TestReachingGoogle" />
+        </classes>
+    </test>
+
+
+</suite>
