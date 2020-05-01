@@ -14,7 +14,7 @@ public class Nested {
         while (allWindowTitles.size() < expectedNumberOfOpenApps) {
             log.info("Current apps open {}, expected {}", allWindowTitles.size(), expectedNumberOfOpenApps);
             allWindowTitles = getAllOpenWindowTitles();
-            if (allWindowTitles.size() == expectedNumberOfOpenApps) {
+            if (allWindowTitles.size() <= expectedNumberOfOpenApps) {
                 haveAllTheAppsLoaded = true;
                 break;
             }
